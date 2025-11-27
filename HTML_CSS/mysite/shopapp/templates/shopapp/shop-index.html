@@ -1,0 +1,26 @@
+{% extends 'shopapp/base.html' %}
+
+{% block title %}
+  Shop index
+{% endblock %}
+
+{% block body %}
+  <h1>Hello Shop Index!</h1>
+
+  <div>
+    <ul>
+      {% for name, price in products %}
+        <li>
+          {{ name }} ({{ name|length }} chars) for {{ price }} $
+
+          {# пример условия: если длина имени ровно 7 символов #}
+          {% if name|length == 7 %}
+            <span> — special product</span>
+          {% endif %}
+        </li>
+      {% empty %}
+        <li>No products here</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

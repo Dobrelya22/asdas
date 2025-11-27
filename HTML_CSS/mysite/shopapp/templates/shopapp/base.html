@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>
+    {% block title %}
+      Base Title
+    {% endblock %}
+  </title>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="{% url 'shopapp:index' %}">Shop index</a></li>
+    <li><a href="{% url 'shopapp:products_list' %}">Products</a></li>
+    <li><a href="{% url 'shopapp:orders_list' %}">Orders</a></li>
+    <li><a href="{% url 'shopapp:product_create' %}">Create product</a></li>
+    <li><a href="{% url 'shopapp:order_create' %}">Create order</a></li>
+  </ul>
+</nav>
+
+<hr>
+
+{% block body %}
+  Base body
+{% endblock %}
+
+</body>
+</html>
