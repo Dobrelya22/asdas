@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дизайн-агентство</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="popup">
+      <h3>Оставьте заявку</h3>
+      <form class="popup-form">
+        <input type="text" placeholder="Имя" required>
+        <input type="email" placeholder="Email" required>
+        <button type="submit" class="primary-btn">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <div class="logo">Creative Studio</div>
+    <nav class="header-nav">
+      <a href="#services">Услуги</a>
+      <a href="#works">Работы</a>
+      <a href="#about">О нас</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <button class="secondary-btn open-popup" type="button">Заказать проект</button>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="hero-content">
+        <h1>Создаём яркие проекты</h1>
+        <h2>Делаем дизайн, который подчёркивает уникальность вашего бренда</h2>
+        <button class="primary-btn open-popup" type="button">Оставить заявку</button>
+      </div>
+      <div class="hero-visual" aria-hidden="true"></div>
+    </section>
+
+    <section class="services" id="services">
+      <h2>Наши услуги</h2>
+      <div class="cards-row">
+        <article class="card">
+          <h3>Веб-дизайн</h3>
+          <p>Современные интерфейсы для сайтов и сервисов, удобные на любой платформе.</p>
+        </article>
+        <article class="card">
+          <h3>Брендинг</h3>
+          <p>Айдентика, которая делает ваш продукт узнаваемым и последовательным.</p>
+        </article>
+        <article class="card">
+          <h3>Маркетинговые материалы</h3>
+          <p>Презентации, баннеры и печатная продукция для продвижения бренда.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="works" id="works">
+      <h2>Примеры работ</h2>
+      <div class="cards-row">
+        <figure class="work-item">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=60" alt="Работа 1">
+          <figcaption>Корпоративный сайт</figcaption>
+        </figure>
+        <figure class="work-item">
+          <img src="https://images.unsplash.com/photo-1508830524289-0adcbe822b40?auto=format&fit=crop&w=800&q=60" alt="Работа 2">
+          <figcaption>Айдентика бренда</figcaption>
+        </figure>
+        <figure class="work-item">
+          <img src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?auto=format&fit=crop&w=800&q=60" alt="Работа 3">
+          <figcaption>Мобильное приложение</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="cta-block">
+      <div class="cta-content">
+        <h2>Готовы обсудить идею?</h2>
+        <p>Расскажите нам о своих задачах, и мы предложим решение, которое поможет выделиться среди конкурентов и добиться целей.</p>
+        <button class="secondary-btn open-popup" type="button">Связаться</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer" id="contacts">
+    <div class="footer-inner">
+      <div class="footer-menu">
+        <h4>Меню</h4>
+        <nav class="footer-nav">
+          <a href="#services">Услуги</a>
+          <a href="#works">Работы</a>
+          <a href="#about">О нас</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+      <div class="footer-contacts">
+        <h4>Контакты</h4>
+        <p>+7 (900) 123-45-67</p>
+        <p>hello@creative.studio</p>
+      </div>
+      <div class="footer-socials">
+        <h4>Мы в сети</h4>
+        <div class="social-links">
+          <a href="#">Instagram</a>
+          <a href="#">Dribbble</a>
+          <a href="#">Behance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
